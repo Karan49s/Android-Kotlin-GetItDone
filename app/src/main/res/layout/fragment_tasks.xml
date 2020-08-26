@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TasksFragment"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/tasksscroll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="#000000">
+        <view class="androidx.appcompat.app.AlertController$RecycleListView"
+            android:id="@+id/taskrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </view>
+    </androidx.core.widget.NestedScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"/>
+
+
+
+</LinearLayout>
